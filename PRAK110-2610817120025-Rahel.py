@@ -2,17 +2,18 @@ import math
 
 Alas = 5
 Tinggi = 12
-Miring = (int)(math.sqrt(Alas**2 + Tinggi**2))
-Keliling = (int)(Alas + Tinggi + Miring)
-Luas = (int)((Alas * Tinggi) / 2)
+
+# Contoh menggunakan pow()
+Miring = int(math.sqrt(pow(Alas, 2) + pow(Tinggi, 2)))
+Keliling = Alas + Tinggi + Miring
+Luas = int((Alas * Tinggi) / 2)
 
 print("Diketahui :")
-print("Alas = {} cm".format(Alas))
-print("Tinggi = {} cm".format(Tinggi))
-print()
+print(f"Alas = {Alas} cm")
+print(f"Tinggi = {Tinggi} cm\n")
 print("Jawab :")
-print("Sisi A = {} cm".format(Alas))
-print("Sisi B = {} cm".format(Tinggi))
-print("Sisi C = {} cm".format(Miring))
-print("Keliling = {} cm".format(Keliling))
-print("Luas = {} cm".format(Luas))
+print(f"Sisi A = {Alas} cm")
+print(f"Sisi B = {Tinggi} cm")
+print(f"Sisi C = {Miring} cm")
+print(f"Keliling = {Keliling} cm")
+print(f"Luas = {Luas} cm")
